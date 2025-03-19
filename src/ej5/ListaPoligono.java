@@ -9,9 +9,9 @@ public class ListaPoligono {
 	public static boolean añadir(Poligono figura) {
 		return listaPolifonos.add(figura);
 	}
-	private void mostrarPoligo() {
+	public static void mostrarPoligo() {
 		for (Poligono p: listaPolifonos) {
-			System.out.println(p + p,);
+			System.out.println(p + ""+ p.area());
 		}
 		
 	}

@@ -6,6 +6,16 @@ public abstract class Poligono {
 	 */
 	int numeroLados = 0; 
 	
+	public int getNumeroLados() {
+		return numeroLados;
+	}
+
+
+	public void setNumeroLados(int numeroLados) {
+		this.numeroLados = numeroLados;
+	}
+
+
 	/**
 	 * 
 	 * @param numeroLados

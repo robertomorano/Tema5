@@ -1,7 +1,5 @@
 package ej5;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
@@ -30,7 +28,7 @@ public class Principal {
 				ListaPoligono.añadir(new Recatangulo(b, c));
 			}
 			case 3 ->{
-				
+				ListaPoligono.mostrarPoligo();
 			}
 			default ->{
 				System.out.println("Saliendo del sistema");
