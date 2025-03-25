@@ -17,6 +17,17 @@ public class Socio implements Comparable<Socio> {
 			
 			return this.nombre+" Edad: "+ this.edad;
 		}
+	@Override
+	public boolean equals(Object obj) {
+		boolean equal = false;
+		if (obj instanceof Socio e) {
+			if(e.id == this.id) {
+				equal = true;
+			}
+		}
+		return equal;
+		
+	}
 
 	@Override
 	public int compareTo(Socio o) {
