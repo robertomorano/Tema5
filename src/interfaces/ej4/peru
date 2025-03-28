@@ -1,0 +1,30 @@
+Vehiculo 
+	- marca String
+	- modelo String
+	- color String
+	- matricula String
+	- motor boolean  encendido apagado
+	- marchaActual
+	- velocidad
+----------------------------	
+	+ Parar()
+	+ Arrancar()
+	+ SubirMarcha()
+	+ bajarMarcha()
+	+ subirVelocidad(int velocidad)
+	+ bajarVelocidad(int velocidad)
+	
+-------------------------------
+
+Turismo extend Vehiculo
+	- numeroPlazas
+	- enum Profesional, Particular
+	
+----------------------------------
+Camion extend Vehiculo
+	 - MMA
+ 	- Peliggrosa boolean
+----------------------------------
+Motocicleta extend Vehiculo
+	- Cilindaara int
+	+ carne() tru si e mayor a 125 
