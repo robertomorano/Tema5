@@ -21,5 +21,10 @@ public class Libros extends Ficha{
 	public String toString() {
 		return super.toString()+"Libros [autor=" + autor + ", editorial=" + editorial + "]";
 	}
+	@Override
+	public int prestamo() {
+		// TODO Auto-generated method stub
+		return 15;
+	}
 	
 }

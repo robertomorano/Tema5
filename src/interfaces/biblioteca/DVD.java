@@ -29,5 +29,10 @@ public class DVD extends Ficha {
 	public String toString() {
 		return super.toString()+" DVD [director=" + director + ", año=" + año + ", tipo=" + tipo + "]";
 	}
+	@Override
+	public int prestamo() {
+		// TODO Auto-generated method stub
+		return 5;
+	}
 	
 }

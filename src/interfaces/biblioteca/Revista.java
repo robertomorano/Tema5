@@ -21,5 +21,11 @@ public class Revista extends Ficha {
 	public String toString() {
 		return super.toString() + " Revista [numRevista=" + numRevista + ", añoPub=" + añoPub + "]";
 	}
+
+	@Override
+	public int prestamo() {
+		// TODO Auto-generated method stub
+		return 10;
+	}
 	
 }
