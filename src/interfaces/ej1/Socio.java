@@ -12,6 +12,18 @@ public class Socio implements Comparable<Socio> {
 	
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
 	@Override
 		public String toString() {
 			

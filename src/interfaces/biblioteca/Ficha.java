@@ -2,10 +2,10 @@ package interfaces.biblioteca;
 
 import java.util.Objects;
 
-public abstract class Ficha {
+public abstract class Ficha implements Comparable<Ficha>{
 	int codigo = 0;
 	String titulo = "";
-	public abstract int prestamo();
+	
 	public Ficha(int codigo, String titulo) {
 	
 		this.codigo = codigo;
@@ -17,7 +17,16 @@ public abstract class Ficha {
 	public String getTitulo() {
 		return titulo;
 	}
-	
+	@Override
+	public int compareTo(Ficha o) {
+		int res = 0;
+		if(this.codigo < o.getCodigo()) {
+			res = -1;
+		}else {
+			res = 1;
+		}
+		return res;
+	}
 	@Override
 	public int hashCode() {
 		return Objects.hash(codigo);
@@ -32,5 +41,5 @@ public abstract class Ficha {
 	public String toString() {
 		return "Ficha [codigo=" + codigo + ", titulo=" + titulo + "]";
 	}
-	
+	public abstract int prestamo();
 }

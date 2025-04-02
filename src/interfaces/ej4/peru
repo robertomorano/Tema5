@@ -7,9 +7,9 @@ Vehiculo
 	- marchaActual
 	- velocidad
 ----------------------------	
-	+ Parar()
-	+ Arrancar()
-	+ SubirMarcha()
+	+ parar()
+	+ arrancar()
+	+ subirMarcha()
 	+ bajarMarcha()
 	+ subirVelocidad(int velocidad)
 	+ bajarVelocidad(int velocidad)
@@ -23,8 +23,8 @@ Turismo extend Vehiculo
 ----------------------------------
 Camion extend Vehiculo
 	 - MMA
- 	- Peliggrosa boolean
+ 	- Peligrosa boolean
 ----------------------------------
 Motocicleta extend Vehiculo
-	- Cilindaara int
-	+ carne() tru si e mayor a 125 
+	- Cilindrada int
+	+ carnet() true si es mayor a 125 
