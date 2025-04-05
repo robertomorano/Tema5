@@ -31,7 +31,6 @@ public class DVD extends Ficha {
 	}
 	@Override
 	public int prestamo() {
-		// TODO Auto-generated method stub
 		return 5;
 	}
 	
