@@ -1,1 +1,30 @@
-CuentaBancaria
+Class CuentaBancaria()
+	private int numCuenta
+	private double saldo
+	private Set<Titular>
+	public ingresar(double cantidad)
+	public retirar(double cantidad)
+	public añadirTitular(Titular nuevo)
+	public eliminarTitular(Titular eliminar)	
+
+Class Titular()
+	private String dni
+	private String nombre
+	private String apellidos
+	private int telefono
+	
+Class CuentaAhorro() extends CuentaBancaria
+	private double mantenimiento
+	private double interesAnual
+
+Class CuentaCorriente() extends CuentaBancaria
+	private static double porcentaje
+	Set <Transaccion>
+	getTranasacciones(){transacciones.length}
+	
+Class transaccion()
+	private int dia
+	private int mes
+	private int año
+	private String concepto
+	private double importe
