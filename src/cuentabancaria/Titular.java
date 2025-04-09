@@ -1,6 +1,6 @@
 package cuentabancaria;
 
-public class Titular {
+public class Titular implements Comparable<String>{
 	private String dni;
 	private String nombre;
 	private String apellidos;
@@ -34,6 +34,11 @@ public class Titular {
 	public String toString() {
 		return "Titular [dni=" + dni + ", nombre=" + nombre + ", apellidos=" + apellidos + ", telefono=" + telefono
 				+ "]";
+	}
+	@Override
+	public int compareTo(String o) {
+		int res = o.compareTo(this.dni);
+		return res;
 	}
 	
 	

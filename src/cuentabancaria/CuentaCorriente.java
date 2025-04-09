@@ -8,7 +8,7 @@ public class CuentaCorriente extends CuentaBancaria {
 	
 	
 	
-	public CuentaCorriente(int numCuenta, double saldo, Titular titular, HashSet<Transaccion> transacciones) {
+	public CuentaCorriente(int numCuenta, double saldo, Titular titular, HashSet<Transaccion> transacciones) throws DniException, SaldoException {
 		super(numCuenta, saldo, titular);
 		this.transacciones = transacciones;
 	}
